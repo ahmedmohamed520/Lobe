@@ -1,0 +1,250 @@
+/************************/
+/* GENERALS */
+/************************/
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.8rem;
+    line-height: 1;
+    color: #333;
+}
+a {
+    text-decoration: none;
+}
+::selection {
+    background: rgba(0, 230, 184, 0.2);
+}
+/************************/
+/* HEADER */
+/************************/
+.header {
+    padding: 0 4rem 0 2rem;
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: rgb(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    box-shadow: rgb(0 0 0 / 0%) 0px 30px 60px -10px;
+    z-index: 100;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+}
+
+.nav-link:link,
+.nav-link:visited {
+    display: block;
+    font-weight: 500;
+    color: #767676;
+    transition: 0.2s all ease-in;
+}
+
+.nav-link:hover,
+.nav-link:active {
+    transform: translateY(-1px);
+    color: #333;
+}
+
+.open .btn {
+    display: none;
+}
+.close-nav-btn {
+    display: none;
+}
+/************************/
+/* SECTION INTRO */
+/************************/
+.section-intro {
+    margin-top: 8rem;
+    padding: 4rem 7.3rem 8rem;
+}
+.heading-primary {
+    font-weight: 900;
+    font-size: 5.6rem;
+    margin-bottom: 1.2rem;
+}
+.heading-primary span {
+    color: #04ddb2;
+}
+.text {
+    font-size: 2.4rem;
+    line-height: 1.5;
+    margin-bottom: 6.4rem;
+}
+
+.video-container {
+    margin-top: 6.4rem;
+    margin-bottom: 8rem;
+    transition: 0.4s all;
+    cursor: pointer;
+}
+.video-container:hover {
+    box-shadow: 0 100px 140px -50px rgb(0 0 0 / 25%), 0 0 20px 0 rgb(0 0 0 / 3%);
+    transform: scale3d(1.01, 1.01, 1.01);
+}
+.video-container img {
+    width: 100%;
+}
+
+/************************/
+/* FOOTER */
+/************************/
+.footer {
+    margin: 0 8rem;
+    padding: 6rem 7rem 14rem;
+    border-top: 0.5px solid rgba(0, 0, 0, 0.2);
+}
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.9fr repeat(3, 1fr) 0.5fr;
+    gap: 3rem;
+}
+.col {
+}
+.footer-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    font-size: 1.6rem;
+    line-height: 1;
+    user-select: none;
+}
+.footer-link:link,
+.footer-link:visited {
+    display: block;
+    color: #333;
+    transition: 0.2s all;
+}
+.footer-link:hover,
+.footer-link:active {
+    transform: scale(1.04) translateX(0.5%);
+}
+.icon-col {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.icon-col a {
+    display: block;
+    perspective: 100px;
+}
+.footer-icon {
+    cursor: pointer;
+    color: #fff;
+    background-color: #04ddb2;
+    padding: 1rem;
+    width: 2rem;
+    height: 2rem;
+    fill: #fff;
+    border-radius: 50%;
+    transition: 0.1s all ease;
+}
+.footer-icon:hover {
+    transform: scale3d(1.1, 1.1, 1.1);
+}
+
+/************************/
+/* MODAL */
+/************************/
+.overlay {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(51, 51, 51, 0.8);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.close-icon {
+    position: absolute;
+    top: 3vh;
+    right: 2vw;
+    width: 4rem;
+    height: 4rem;
+    color: #5e857c;
+    cursor: pointer;
+}
+.modal {
+    height: 80vh;
+    width: 78.2vw;
+    margin: 0 auto;
+    background-color: transparent;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.video {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+/************************/
+/* REUSEABLE */
+/************************/
+.container {
+    max-width: 55rem;
+    margin: 0 auto;
+    text-align: center;
+}
+.btn {
+    font: inherit;
+    background-color: #04ddb2;
+    color: #fff;
+    border-radius: 24px;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+}
+.btn--md {
+    width: 12.9rem;
+    height: 4.8rem;
+}
+.btn--lg {
+    width: 16.8rem;
+    height: 5rem;
+}
+.btn:hover {
+    transform: scale(1.05);
+}
+.active:link,
+.active:visited {
+    color: #333;
+}
+.margin-bottom-md {
+    margin-bottom: 4.8rem;
+}
+.secondary-heading {
+    margin-bottom: 3.2rem;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1;
+}
+.show {
+    display: flex;
+}

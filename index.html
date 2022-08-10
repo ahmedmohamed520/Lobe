@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/queries.css" />
+
+        <!-- Icons -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <!-- MY SCRIPT -->
+        <script src="js/script.js" defer></script>
+    </head>
+    <body>
+        <header class="header">
+            <a href="#" class="logo">
+                <img src="img/logo.png" alt="Lobe" />
+            </a>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="#" class="nav-link">Overview</a></li>
+                    <li><a href="#" class="nav-link">Examples</a></li>
+                    <li><a href="#" class="nav-link active">Tour</a></li>
+                    <li><a href="#" class="nav-link">Blog</a></li>
+                    <li><a href="#" class="nav-link">Help</a></li>
+                </ul>
+            </nav>
+            <button class="btn btn--md">Download</button>
+            <div class="close-nav-btn">
+                <ion-icon name="menu-outline" class="nav-icon"></ion-icon>
+                <ion-icon name="close-outline" class="nav-icon"></ion-icon>
+            </div>
+        </header>
+
+        <main>
+            <section class="section-intro">
+                <div class="container">
+                    <h1 class="heading-primary">Lobe <span>Tour</span></h1>
+                    <p class="text">
+                        Build your first machine learning model in ten minutes. No code or experience
+                        required.
+                    </p>
+                </div>
+
+                <div class="video-container">
+                    <img src="img/Video.jpg" alt="thumbnail for video that shows the program" />
+                </div>
+
+                <div class="container">
+                    <h2 class="heading-primary margin-bottom-md">Train your app with Lobe</h2>
+                    <button class="btn btn--lg">Download</button>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-grid">
+                <div class="col logo-col">
+                    <h3 class="secondary-heading">
+                        <img src="img/footer-logo.png" alt="Lobe" />
+                    </h3>
+                    <ul class="footer-list">
+                        <li>A product by Microsoft.</li>
+                        <li>All rights reserved.</li>
+                        <li>© Microsoft 2021</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3 class="secondary-heading">About</h3>
+                    <ul class="footer-list">
+                        <li><a href="#" class="footer-link" title="Download">Download</a></li>
+                        <li><a href="#" class="footer-link" title="Overview">Overview</a></li>
+                        <li><a href="#" class="footer-link" title="Examples">Examples</a></li>
+                        <li><a href="#" class="footer-link" title="Blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3 class="secondary-heading">General</h3>
+                    <ul class="footer-list">
+                        <li><a href="#" class="footer-link" title="Notice">Notice</a></li>
+                        <li><a href="#" class="footer-link" title="License">License</a></li>
+                        <li><a href="#" class="footer-link" title="Press">Press Inquiry</a></li>
+                        <li><a href="#" class="footer-link" title="Press Images">Press Images</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3 class="secondary-heading">Resources</h3>
+                    <ul class="footer-list">
+                        <li><a href="#" class="footer-link" title="Help">Help</a></li>
+                        <li><a href="#" class="footer-link" title="Tour">Tour</a></li>
+                        <li><a href="#" class="footer-link" title="Contact">Contact</a></li>
+                        <li><a href="#" class="footer-link" title="Privacy">Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="icon-col">
+                    <a href="#"><ion-icon name="chatbubble" class="footer-icon"></ion-icon></a
+                    ><a href="#"><ion-icon name="logo-twitter" class="footer-icon"></ion-icon></a
+                    ><a href="#"><ion-icon name="logo-youtube" class="footer-icon"></ion-icon></a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Modal -->
+        <div class="overlay">
+            <ion-icon name="close-outline" class="close-icon"></ion-icon>
+            <div class="modal">
+                <iframe
+                    class="video"
+                    src=""
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                ></iframe>
+            </div>
+        </div>
+    </body>
+</html>

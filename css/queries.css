@@ -1,0 +1,96 @@
+@media (max-width: 59em) {
+    html {
+        font-size: 56.25%;
+    }
+}
+@media (max-width: 53em) {
+    html {
+        font-size: 58%;
+    }
+    .footer {
+        margin: 0 2rem;
+    }
+}
+@media (max-width: 44em) {
+    .btn--md {
+        display: none;
+    }
+    .close-nav-btn {
+        display: none;
+    }
+    .nav-icon {
+        width: 2.4rem;
+        height: 2.4rem;
+        background-color: #eef0f2;
+        color: #333;
+        padding: 1rem;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .main-nav {
+        position: fixed;
+        top: 8rem;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        z-index: 1500;
+        background-color: rgb(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+
+        height: calc(100vh - 8rem);
+        padding: 3rem;
+        border-top: 1px solid #f0f0f0;
+
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: 0.4s all;
+    }
+
+    .open .main-nav {
+        transform: scaleY(1);
+    }
+    .nav-list {
+        /* mobile */
+        flex-direction: column;
+        opacity: 0;
+        transition: 0.4s all;
+    }
+    .open .nav-list {
+        opacity: 1;
+    }
+    .close-nav-btn {
+        display: block;
+    }
+
+    .close-nav-btn [name="close-outline"],
+    .open .close-nav-btn [name="menu-outline"] {
+        display: none;
+    }
+    .open .close-nav-btn [name="close-outline"] {
+        display: block;
+    }
+    .footer {
+        margin: 0;
+        padding: 6rem 3rem 14rem;
+    }
+}
+@media (max-width: 37em) {
+    .section-intro {
+        padding: 4rem 7.3rem 5.5rem;
+    }
+    .footer {
+        margin: 0 4rem;
+        text-align: center;
+    }
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 7.5rem 4rem;
+    }
+    .logo-col {
+        grid-row: 3/4;
+        grid-column: 1/-1;
+    }
+    .heading-primary {
+        font-size: 4rem;
+    }
+}
